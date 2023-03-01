@@ -7,7 +7,7 @@ namespace webapifinal.Repository
     {
         public static string connectionString = "Data Source=QT5\\SQLEXPRESS;Initial Catalog=SistemaGestion;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        //Cargar nueva Venta
+        
         public static long InsertarVenta(Venta nuevaVenta)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -40,7 +40,7 @@ namespace webapifinal.Repository
 
         }
 
-        /// Trae toda la lista de ventas (no estaba pedido en la entrega)
+        
         public static List<Venta> ObtenerTodasLasVentas()
         {
             List<Venta> listaVentas = new List<Venta>();
@@ -67,7 +67,7 @@ namespace webapifinal.Repository
             }
         }
 
-        // Trae la lista de ventas realizadas por el usuario indicado
+        
         public static List<Venta> ObtenerVentasPorUsuario(long idUsuario)
         {
             List<Venta> ventasPorUsuario = new List<Venta>();

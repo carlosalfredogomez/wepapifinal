@@ -8,7 +8,7 @@ namespace webapifinal.Repository
 
         public static string connectionString = "Data Source=QT5\\SQLEXPRESS;Initial Catalog=SistemaGestion;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        //Cargar nuevo usuario
+        
         public static int CargarUsuario(Usuario nuevoUsuario)
         {
 
@@ -27,7 +27,7 @@ namespace webapifinal.Repository
             }
         }
 
-        /// Modificar Usuario
+        
 
         public static int ModificarUsuario(Usuario nuevoUsuario)
         {
@@ -56,7 +56,7 @@ namespace webapifinal.Repository
             }
         }
 
-        /// Trae el usuario con el ID indicado
+        
         public static Usuario buscarUsuarioPorId(long idUsuario)
         {
             Usuario buscado = new Usuario();
@@ -84,7 +84,7 @@ namespace webapifinal.Repository
             }
         }
 
-        /// Trae el usuario con el nombre indicado
+        
         public static Usuario buscarUsuario(string usuario)
         {
             Usuario buscado = new Usuario();
@@ -112,7 +112,7 @@ namespace webapifinal.Repository
             }
         }
 
-        // Inicio Sesion 
+        
         public static Usuario InicioSesion(string usuario, string contraseña)
         {
             Usuario buscado = new Usuario();
@@ -141,7 +141,7 @@ namespace webapifinal.Repository
             }
         }
 
-        /// Eliminar Usuario
+        
         public static int EliminarUsuario(long idUsuario)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))

@@ -7,7 +7,7 @@ namespace webapifinal.Repository
     {
         public static string connectionString = "Data Source=QT5\\SQLEXPRESS;Initial Catalog=SistemaGestion;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        //Cargar nuevo producto
+        
         public static int CargarProducto(Producto nuevoProducto)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -25,7 +25,7 @@ namespace webapifinal.Repository
             }
         }
 
-        /// Modificar Producto
+        
 
         public static int ModificarProducto(Producto aModificar)
         {
@@ -45,7 +45,7 @@ namespace webapifinal.Repository
             }
         }
 
-        /// Consulta producto por ID
+        
 
         public static Producto obtenerProductoPorId(long id)
         {
@@ -73,7 +73,7 @@ namespace webapifinal.Repository
             }
         }
 
-        /// Trae toda la lista de producto 
+        
         public static List<Producto> obtenerTodosProductos()
         {
             List<Producto> productos = new List<Producto>();
@@ -103,7 +103,7 @@ namespace webapifinal.Repository
             }
         }
 
-        // Trae la lista de prodcutos cargada por el usuario indicado
+        
         public static List<Producto> obtenerProductosPorUsuario(long idUsuario)
         {
             List<Producto> productosUsuario = new List<Producto>();
@@ -133,7 +133,7 @@ namespace webapifinal.Repository
             }
         }
 
-        //Eliminar Producto 
+        
         public static int EliminarProducto(long id)
         {
             ProductoVendidoHandler.EliminarProductoVendido(id);

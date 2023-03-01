@@ -24,7 +24,7 @@ namespace webapifinal.Repository
             }
         }
 
-        /// Trae toda la lista de productos vendidos (no estaba pedido en la entrega)
+       
         public static List<ProductoVendido> obtenerProductosVendidos()
         {
             List<ProductoVendido> productosVendidos = new List<ProductoVendido>();
@@ -52,7 +52,7 @@ namespace webapifinal.Repository
             }
         }
 
-        // Trae la lista de prodcutos vendidos por el usuario indicado
+        
         public static List<ProductoVendido> obtenerProductosVendidosPorUsuario(long idUsuario)
         {
             List<ProductoVendido> productosVendidos = new List<ProductoVendido>();
@@ -80,7 +80,7 @@ namespace webapifinal.Repository
             }
         }
 
-        //Eliminar Producto Vendido
+       
         public static int EliminarProductoVendido(long idProducto)
         {
 
